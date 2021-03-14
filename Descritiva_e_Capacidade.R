@@ -12,6 +12,7 @@ require(qcc)
 dados<- read_excel("Dados.xlsx", sheet =  "Bloodsugar") %>%
   rename("dia" = "Reading", "id" = "SubjectID" , "Glicose" ="Glucoselevel") %>%
   mutate(dia = as_factor(dia), id = as_factor(id))
+##
 
 summary(dados)
 
